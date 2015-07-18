@@ -89,7 +89,9 @@
 #define SDPOWER            -1
 #define SDSS               53
 #define LED_PIN            13
-#define FAN_PIN            8  
+#define FAN_PIN            8  //Fan0 --- Extruder0 Fan
+#define FAN1_PIN           6  //Fan1 --- Extruder1 Fan
+#define FAN2_PIN           2  //Fan2 --- Case Fan
 
 /**********************************************************
   Fan Pins

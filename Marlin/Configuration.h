@@ -207,11 +207,17 @@ Here are some standard links for getting your machine calibrated:
   #define PID_INTEGRAL_DRIVE_MAX PID_MAX  //limit for the integral term
   #define K1 0.95 //smoothing factor within the PID
 
+  // base48 TAZ autotune, E3D v5 with 12V heater
+  // M303 E0 S200 C8
+  #define  DEFAULT_Kp 11.16
+  #define  DEFAULT_Ki 0.99
+  #define  DEFAULT_Kd 31.55
+
   // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
   // Buda 2.0 on 24V
-  #define  DEFAULT_Kp 6
-  #define  DEFAULT_Ki .3
-  #define  DEFAULT_Kd 125
+  //#define  DEFAULT_Kp 6
+  //#define  DEFAULT_Ki .3
+  //#define  DEFAULT_Kd 125
 
   // Buda 2.0 on 12V
   //#define  DEFAULT_Kp 22.2
@@ -264,10 +270,16 @@ Here are some standard links for getting your machine calibrated:
 
   #define PID_BED_INTEGRAL_DRIVE_MAX MAX_BED_POWER //limit for the integral term
 
+  // base48 TAZ autotune, same conf as bellow
+  // M303 E-1 S100 C8
+  #define  DEFAULT_bedKp 110.63
+  #define  DEFAULT_bedKi 10.42
+  #define  DEFAULT_bedKd 293.64
+
   //24V 360W silicone heater from NPH on 3mm borosilicate (TAZ 2.2+)
-  #define  DEFAULT_bedKp 20
-  #define  DEFAULT_bedKi 5
-  #define  DEFAULT_bedKd 275
+  //#define  DEFAULT_bedKp 20
+  //#define  DEFAULT_bedKi 5
+  //#define  DEFAULT_bedKd 275
 
   //12v 400W silicone heater from QUDB into 3mm borosilicate (TAZ 1.0+)
   //from pidautotune

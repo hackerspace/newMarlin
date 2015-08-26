@@ -85,7 +85,15 @@
 //This is for controlling a fan to cool down the stepper drivers
 //it will turn on when any driver is enabled
 //and turn off after the set amount of seconds from last driver being disabled again
-#define CONTROLLERFAN_PIN FAN2_PIN //Pin used for the fan to cool controller (-1 to disable)
+
+/**********************************************************
+  Fan Pins
+  Fan_0 8 - Extruder 0 fan
+  Fan_1 6 - Extruder 1 fan
+  Fan_2 2 - Case fan
+***********************************************************/
+
+#define CONTROLLERFAN_PIN 2 //Pin used for the fan to cool controller (-1 to disable)
 #define CONTROLLERFAN_SECS 60 //How many seconds, after all motors were disabled, the fan should run
 #define CONTROLLERFAN_SPEED 130  // 255 == full speed
 

@@ -49,8 +49,10 @@
 #define Z_MIN_PIN 10
 #define Z_MAX_PIN 30
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN 10
+  #define Z_MIN_PROBE_PIN 30 # Z-MAX
 #endif
+
+#define FIL_RUNOUT_PIN        23 # Y-MAX
 
 #define X_STEP_PIN 37
 #define X_DIR_PIN 48
@@ -100,7 +102,10 @@
 
 #define SDSS               53
 #define LED_PIN            13
-#define FAN_PIN            8
+#define FAN_PIN            8  //Fan0 --- Extruder0 Fan
+#define FAN1_PIN           6  //Fan1 --- Extruder1 Fan
+#define FAN2_PIN           2  //Fan2 --- Case Fan
+ 
 
 #define FILWIDTH_PIN        3  // ANALOG NUMBERING
 

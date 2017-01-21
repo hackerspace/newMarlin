@@ -49,10 +49,10 @@
 #define Z_MIN_PIN 10
 #define Z_MAX_PIN 30
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN 30 # Z-MAX
+  #define Z_MIN_PROBE_PIN 30 // Z-MAX
 #endif
 
-#define FIL_RUNOUT_PIN        23 # Y-MAX
+#define FIL_RUNOUT_PIN        23 // Y-MAX
 
 #define X_STEP_PIN 37
 #define X_DIR_PIN 48

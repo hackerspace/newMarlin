@@ -57,9 +57,7 @@
 //
 // Z Probe (when not Z_MIN_PIN)
 //
-#ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN  30
-#endif
+#define Z_MIN_PROBE_PIN  30 // Z-MAX
 
 //
 // Limit Switches
@@ -124,9 +122,9 @@
 #define HEATER_2_PIN        6
 #define HEATER_BED_PIN      3
 
-#define FAN_PIN             8
-#define FAN1_PIN            6
-#define FAN2_PIN            2
+#define FAN_PIN             8 // Fan0 -- Extruder0 Fan
+#define FAN1_PIN            6 // Fan1 -- Extruder1 Fan
+#define FAN2_PIN            2 // Fan2 -- Case Fan
 
 //
 // Misc. Functions
@@ -135,6 +133,8 @@
 #define LED_PIN            13
 #define PS_ON_PIN           4
 #define CASE_LIGHT_PIN     46
+
+#define FIL_RUNOUT_PIN     23
 
 #ifndef FILWIDTH_PIN
   #define FILWIDTH_PIN      3   // Analog Input
